@@ -23,7 +23,6 @@
     <Folder Include="DAL\" />
     <Folder Include="DATA\" />
     <Folder Include="Entidades\" />
-    <Folder Include="IU\Registro\" />
   </ItemGroup>
 
   <ItemGroup>

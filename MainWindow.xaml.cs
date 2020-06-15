@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Parcial1.IU.Registro;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,24 +26,10 @@ namespace Parcial1
             InitializeComponent();
         }
 
-        private void BuscarButton_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-
-        }
-
-        private void NuevoButton_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void GuardarButton_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void EliminarButton_Click(object sender, RoutedEventArgs e)
-        {
-
+            Formulario formulario = new Formulario();
+            formulario.Show();
         }
     }
 }
