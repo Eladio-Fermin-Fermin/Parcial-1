@@ -7,11 +7,64 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\Buscar1.png" />
+    <None Remove="Resources\Eliminar1.png" />
+    <None Remove="Resources\Eliminar2.png" />
+    <None Remove="Resources\Eliminar3.png" />
+    <None Remove="Resources\Guardar1.png" />
+    <None Remove="Resources\Guardar2.png" />
+    <None Remove="Resources\Nuevo1.png" />
+    <None Remove="Resources\Nuevo2.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="BLL\" />
     <Folder Include="DAL\" />
     <Folder Include="DATA\" />
     <Folder Include="Entidades\" />
     <Folder Include="IU\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Buscar1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Eliminar1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Eliminar2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Eliminar3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Guardar1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Guardar2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Nuevo1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Nuevo2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
 
 </Project>
