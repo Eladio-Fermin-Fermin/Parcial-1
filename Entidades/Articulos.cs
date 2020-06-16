@@ -8,7 +8,7 @@ namespace Parcial1.Entidades
     public class Articulos
     {
         [Key]
-        public int ProductoId { get; set; }
+        public int ArticuloId { get; set; }
         public string Descripcion { get; set; }
         public int Existencia { get; set; }
         public int Costo { get; set; }

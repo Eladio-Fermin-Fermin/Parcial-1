@@ -22,12 +22,7 @@ namespace Parcial1.IU.Registro
             InitializeComponent();
         }
 
-        private void BuscarButton_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void NuevoButton_Click(object sender, RoutedEventArgs e)
+        private void EliminarButton_Click(object sender, RoutedEventArgs e)
         {
 
         }
@@ -37,7 +32,12 @@ namespace Parcial1.IU.Registro
 
         }
 
-        private void EliminarButton_Click(object sender, RoutedEventArgs e)
+        private void NuevoButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BuscarButton_Click(object sender, RoutedEventArgs e)
         {
 
         }

@@ -12,6 +12,28 @@ namespace Parcial1.BLL
 {
     public class ArticulosBLL
     {
+
+
+        public static bool Existe(int Id)
+        {
+            Contexto contexto = new Contexto();
+            bool encontrado = false;
+
+            try
+            {
+                encontrado = contexto.Articulos.Any(encontrado => encontrado.ArticuloId == Id);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                contexto.Dispose();
+            }
+            return encontrado;
+        }
+
         private static bool Insertar(Articulos articulos)
         {
             bool paso = false;
@@ -56,7 +78,7 @@ namespace Parcial1.BLL
 
         public static bool Guardar(Articulos articulos)
         {
-            if (!Existe(articulos.ProductoId))
+            if (!Existe(articulos.ArticuloId))
                 return Insertar(articulos);
             else
                 return Modificar(articulos);
