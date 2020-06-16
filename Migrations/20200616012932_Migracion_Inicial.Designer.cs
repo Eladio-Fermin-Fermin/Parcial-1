@@ -8,8 +8,8 @@ using Parcial1.DAL;
 namespace Parcial1.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20200615224815_Migracion_Inicio")]
-    partial class Migracion_Inicio
+    [Migration("20200616012932_Migracion_Inicial")]
+    partial class Migracion_Inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -19,7 +19,7 @@ namespace Parcial1.Migrations
 
             modelBuilder.Entity("Parcial1.Entidades.Articulos", b =>
                 {
-                    b.Property<int>("ProductoId")
+                    b.Property<int>("ArticuloId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
@@ -35,7 +35,7 @@ namespace Parcial1.Migrations
                     b.Property<int>("ValorInventario")
                         .HasColumnType("INTEGER");
 
-                    b.HasKey("ProductoId");
+                    b.HasKey("ArticuloId");
 
                     b.ToTable("Articulos");
                 });

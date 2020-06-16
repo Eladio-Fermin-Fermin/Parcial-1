@@ -2,7 +2,7 @@
 
 namespace Parcial1.Migrations
 {
-    public partial class Migracion_Inicio : Migration
+    public partial class Migracion_Inicial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -10,7 +10,7 @@ namespace Parcial1.Migrations
                 name: "Articulos",
                 columns: table => new
                 {
-                    ProductoId = table.Column<int>(nullable: false)
+                    ArticuloId = table.Column<int>(nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     Descripcion = table.Column<string>(nullable: true),
                     Existencia = table.Column<int>(nullable: false),
@@ -19,7 +19,7 @@ namespace Parcial1.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Articulos", x => x.ProductoId);
+                    table.PrimaryKey("PK_Articulos", x => x.ArticuloId);
                 });
         }
 

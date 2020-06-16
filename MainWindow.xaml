@@ -7,6 +7,6 @@
         mc:Ignorable="d"
         Title="Ventana Principal" Height="300" Width="300">
     <Grid>
-        <Button Content="R" HorizontalAlignment="Left" VerticalAlignment="Top" Width="64" Height="25" Click="Button_Click"/>
+        <Button Content="Registro Articulos" HorizontalAlignment="Left" VerticalAlignment="Top" Width="108" Height="25" Click="Button_Click"/>
     </Grid>
 </Window>

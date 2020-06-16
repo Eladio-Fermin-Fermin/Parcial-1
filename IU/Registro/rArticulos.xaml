@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Parcial1.IU.Registro"
         mc:Ignorable="d"
-        Title="Formulario" Height="300" Width="400">
+        Title="Registro de Articulos" Height="300" Width="400">
     <Grid>
 
         <StackPanel Orientation="Vertical" Margin="10,10,10,10">
@@ -25,7 +25,7 @@
             <!--Descripcion-->
             <StackPanel Orientation="Horizontal" Margin="0,8,0,0">
                 <Label Content="Descripcion" FontWeight="Bold"/>
-                <TextBox Name="DescripcionTextBox" Text="{Binding Descripcion}" Width="200" Height="20" Margin="21,0,30,0"/>
+                <TextBox Name="DescripcionTextBox" Text="{Binding Descripcion}" Width="200" Height="20" Margin="1,0,30,0"/>
             </StackPanel>
 
             <!--Exitencia-->

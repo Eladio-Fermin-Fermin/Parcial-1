@@ -17,7 +17,7 @@ namespace Parcial1.Migrations
 
             modelBuilder.Entity("Parcial1.Entidades.Articulos", b =>
                 {
-                    b.Property<int>("ProductoId")
+                    b.Property<int>("ArticuloId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
@@ -33,7 +33,7 @@ namespace Parcial1.Migrations
                     b.Property<int>("ValorInventario")
                         .HasColumnType("INTEGER");
 
-                    b.HasKey("ProductoId");
+                    b.HasKey("ArticuloId");
 
                     b.ToTable("Articulos");
                 });

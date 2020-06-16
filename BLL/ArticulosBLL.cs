@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Internal;
 using Parcial1.DAL;
 using Parcial1.Entidades;
 using System;
@@ -12,8 +13,6 @@ namespace Parcial1.BLL
 {
     public class ArticulosBLL
     {
-
-
         public static bool Existe(int Id)
         {
             Contexto contexto = new Contexto();
@@ -34,7 +33,7 @@ namespace Parcial1.BLL
             return encontrado;
         }
 
-        private static bool Insertar(Articulos articulos)
+        private static bool Insertar(Entidades.Articulos articulos)
         {
             bool paso = false;
             Contexto contexto = new Contexto();
@@ -55,7 +54,7 @@ namespace Parcial1.BLL
             return paso;
         }
 
-        private static bool Modificar(Articulos articulos)
+        private static bool Modificar(Entidades.Articulos articulos)
         {
             bool paso = false;
             Contexto contexto = new Contexto();
@@ -76,7 +75,7 @@ namespace Parcial1.BLL
             return paso;
         }
 
-        public static bool Guardar(Articulos articulos)
+        public static bool Guardar(Entidades.Articulos articulos)
         {
             if (!Existe(articulos.ArticuloId))
                 return Insertar(articulos);
@@ -109,7 +108,7 @@ namespace Parcial1.BLL
             return paso;
         }
 
-        public static Articulos Buscar(int Id)
+        public static Entidades.Articulos Buscar(int Id)
         {
             Contexto contexto = new Contexto();
             Articulos articulos;
@@ -129,7 +128,7 @@ namespace Parcial1.BLL
             return articulos;
         }
 
-        public static List<Articulos> GetList(Expression<Func<Articulos, bool>> criterio)
+        public static List<Entidades.Articulos> GetList(Expression<Func<Articulos, bool>> criterio)
         {
             List<Articulos> lista = new List<Articulos>();
             Contexto contexto = new Contexto();
