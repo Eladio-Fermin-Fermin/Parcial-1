@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Parcial1"
         mc:Ignorable="d"
+        
         Title="Ventana Principal" Height="300" Width="300">
     <Grid>
         <Button Content="Registro Articulos" HorizontalAlignment="Left" VerticalAlignment="Top" Width="108" Height="25" Click="Button_Click"/>
