@@ -24,8 +24,8 @@
 
             <!--Descripcion-->
             <StackPanel Orientation="Horizontal" Margin="0,8,0,0">
-                <Label Content="Nombre" FontWeight="Bold"/>
-                <TextBox Name="nombreTextBox" Text="{Binding Nombre}" Width="200" Height="20" Margin="21,0,30,0"/>
+                <Label Content="Descripcion" FontWeight="Bold"/>
+                <TextBox Name="DescripcionTextBox" Text="{Binding Descripcion}" Width="200" Height="20" Margin="21,0,30,0"/>
             </StackPanel>
 
             <!--Exitencia-->
