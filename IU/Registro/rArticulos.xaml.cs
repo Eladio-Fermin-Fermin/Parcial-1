@@ -33,11 +33,12 @@ namespace Parcial1.IU.Registro
             this.DataContext = articulos;
         }
 
+        //Metodo Validar.
         private bool Validar()
         {
             bool valido = true;
 
-            if (ArticuloIdTextBox.Text.Length == 0 || DescripcionTextBox.Text.Length == 0 || ExitenciaTextBox.Text.Length == 0) 
+            if (ArticuloIdTextBox.Text.Length == 0 || DescripcionTextBox.Text.Length == 0 || ExistenciaTextBox.Text.Length == 0) 
             {
                 valido = false;
                 MessageBox.Show("Verifique que no allá campos vacíos.", "Fallo", MessageBoxButton.OK, MessageBoxImage.Warning); 
@@ -51,6 +52,7 @@ namespace Parcial1.IU.Registro
 
         }
 
+        //Boton Buscar.
         private void BuscarButton_Click(object sender, RoutedEventArgs e)
         {
             var articulos = ArticulosBLL.Buscar(int.Parse(ArticuloIdTextBox.Text));
@@ -65,6 +67,7 @@ namespace Parcial1.IU.Registro
             this.DataContext = this.articulos;
         }
 
+        //Boto Nuevo.
         private void NuevoButton_Click(object sender, RoutedEventArgs e)
         {
 
@@ -72,7 +75,7 @@ namespace Parcial1.IU.Registro
 
         }
 
-
+        //Boton Guardar
         private void GuardarButton_Click(object sender, RoutedEventArgs e)
         {
             if (!Validar())
@@ -93,6 +96,7 @@ namespace Parcial1.IU.Registro
             }
         }
 
+        //Boton Eliminar.
         private void EliminarButton_Click(object sender, RoutedEventArgs e)
         {
             if(ArticulosBLL.Eliminar(int.Parse(ArticuloIdTextBox.Text)))
@@ -107,10 +111,25 @@ namespace Parcial1.IU.Registro
 
         }
 
-        
+        private void ExistenciaTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            //TextChanged();
+        }
 
-        
+        private void CostoTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            //TextChanged();
+        }
 
-        
+        /*private int TextChanged()
+        {
+            int valorInvertario, existente, costo;
+            if (string.IsNullOrWhiteSpace(ExistenciaTextBox.Text) || ExistenciaTextBox.Text == "0")
+            {
+                ExistenciaTextBox.Text = "0";
+            }
+           
+        }*/
+
     }
 }

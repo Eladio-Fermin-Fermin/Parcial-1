@@ -13,6 +13,8 @@ namespace Parcial1.BLL
 {
     public class ArticulosBLL
     {
+
+        //Metodo Existe.
         public static bool Existe(int Id)
         {
             Contexto contexto = new Contexto();
@@ -33,6 +35,8 @@ namespace Parcial1.BLL
             return encontrado;
         }
 
+
+        //Metodo Insertar.
         private static bool Insertar(Entidades.Articulos articulos)
         {
             bool paso = false;
@@ -54,6 +58,8 @@ namespace Parcial1.BLL
             return paso;
         }
 
+
+        //Metodo Modificar.
         private static bool Modificar(Entidades.Articulos articulos)
         {
             bool paso = false;
@@ -75,6 +81,8 @@ namespace Parcial1.BLL
             return paso;
         }
 
+
+        //Metodo Guardar.
         public static bool Guardar(Entidades.Articulos articulos)
         {
             if (!Existe(articulos.ArticuloId))
@@ -83,6 +91,8 @@ namespace Parcial1.BLL
                 return Modificar(articulos);
         }
 
+
+        //Metodo Eliminar.
         public static bool Eliminar(int Id)
         {
             bool paso = false;
@@ -108,6 +118,8 @@ namespace Parcial1.BLL
             return paso;
         }
 
+
+        //Metodo Buscar.
         public static Entidades.Articulos Buscar(int Id)
         {
             Contexto contexto = new Contexto();
